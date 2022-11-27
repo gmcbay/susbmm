@@ -1,5 +1,5 @@
 # susbmm
-susbmm
+susbmm - used to find potential Destiny 2 smurf accounts being used for SBMM manipulation. 
 
 * Written in Go https://go.dev/doc/install
 * Windows binary version available here: https://github.com/gmcbay/susbmm/releases/download/v1.0/susbmm.exe
