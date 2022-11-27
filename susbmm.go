@@ -11,6 +11,8 @@ import (
 )
 
 func main() {
+	fmt.Printf("API_KEY: %+v\n", API_KEY)
+	
 	args := strings.Join(os.Args[1:], " ")
 
 	splitName := strings.Split(args, "#")
