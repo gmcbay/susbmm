@@ -11,11 +11,7 @@ import (
 	"time"
 )
 
-// Change API_KEY to your own API KEY assigned from the bungie
-// developer portal (while logged into bungie.net):
-//
-// https://www.bungie.net/7/en/registration
-const API_KEY = "PASTE_API_KEY_HERE"
+var API_KEY string
 
 // The most amount of kills a smurf can get in a game,
 // if they score more than this that game isn't counted
