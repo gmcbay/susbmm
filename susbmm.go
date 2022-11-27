@@ -11,14 +11,14 @@ import (
 )
 
 func main() {
-	fmt.Printf("API_KEY: %+v\n", API_KEY)
+	API_KEY = os.Args[1]
 	
-	args := strings.Join(os.Args[1:], " ")
+	args := strings.Join(os.Args[2:], " ")
 
 	splitName := strings.Split(args, "#")
 
 	if len(splitName) != 2 {
-		fmt.Printf("Usage: %s [BungieName]#[BungieCode]\n", os.Args[0])
+		fmt.Printf("Usage: %s [API_KEY] [BungieName]#[BungieCode]\n", os.Args[0])
 		os.Exit(-1)
 	}
 
