@@ -11,15 +11,16 @@ import (
 )
 
 func main() {
-	API_KEY = os.Args[1]
-	
-	args := strings.Join(os.Args[2:], " ")
+	if len(os.Args) < 3 {
+		showUsage()
+	}
 
+	API_KEY = os.Args[1]
+	args := strings.Join(os.Args[2:], " ")
 	splitName := strings.Split(args, "#")
 
 	if len(splitName) != 2 {
-		fmt.Printf("Usage: %s [API_KEY] [BungieName]#[BungieCode]\n", os.Args[0])
-		os.Exit(-1)
+		showUsage()
 	}
 
 	fmt.Printf("Looking for: %s#%s\n", splitName[0], splitName[1])
@@ -140,3 +141,9 @@ func main() {
 
 	fmt.Printf("Done...\n")
 }
+
+func showUsage() {
+	fmt.Printf("Usage: %s [API_KEY] [BungieName]#[BungieCode]\n", os.Args[0])
+	os.Exit(-1)
+}
+
