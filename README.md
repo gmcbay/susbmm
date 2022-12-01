@@ -1,7 +1,6 @@
 # susbmm
 susbmm - used to find potential Destiny 2 smurf accounts being used for SBMM manipulation. 
 
-* Written in Go https://go.dev/doc/install
-* Windows binary version available here: https://github.com/gmcbay/susbmm/releases/download/v1.0/susbmm.exe
+* Written in Go: https://go.dev/doc/install
 * Usage (from command-line): susbmm API_KEY BungieName#0000
 * You will have to get your own API_KEY by signing up through Bungie's developer portal and filling out the "Create New App" form information. Get started here: http://destinydevs.github.io/BungieNetPlatform/docs/Getting-Started
