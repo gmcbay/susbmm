@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-var API_KEY string
+const API_KEY = "PASTE_YOUR_API_KEY"
 
 // The most amount of kills a smurf can get in a game,
 // if they score more than this that game isn't counted
