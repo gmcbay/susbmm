@@ -11,12 +11,11 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 3 {
+	if len(os.Args) < 2 {
 		showUsage()
 	}
 
-	API_KEY = os.Args[1]
-	args := strings.Join(os.Args[2:], " ")
+	args := strings.Join(os.Args[1:], " ")
 	splitName := strings.Split(args, "#")
 
 	if len(splitName) != 2 {
@@ -143,7 +142,7 @@ func main() {
 }
 
 func showUsage() {
-	fmt.Printf("Usage: %s [API_KEY] [BungieName]#[BungieCode]\n", os.Args[0])
+	fmt.Printf("Usage: %s [BungieName]#[BungieCode]\n", os.Args[0])
 	os.Exit(-1)
 }
 
