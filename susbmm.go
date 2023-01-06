@@ -28,7 +28,7 @@ func main() {
 
 	if userInfo.ErrorCode != ErrSuccess {
 		if userInfo.ErrorCode == ErrApiKeyInvalid {
-			log.Fatalf("You must request a personal API key from bungie and pass the value of your API Key as the first argument to this command.\n")
+			log.Fatalf("You must request a personal API key from bungie and paste it into api.go\n")
 		}
 
 		log.Fatalf(
