@@ -8,5 +8,4 @@ susbmm - used to find potential Destiny 2 smurf accounts being used for SBMM man
 * Example: susbmm MidnightFire#8112
 * Example: susbmm Mors#8892
 * Example: susbmm Daniel#8113
-* 
 * (...sadly there are hundreds of these people manipulating SBMM with non-playing bot accounts)
