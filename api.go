@@ -233,7 +233,7 @@ func getPossibleSmurfsFromPGCR(ch chan string, wg *sync.WaitGroup,
 
 			if killCount <= SMURF_SINGLE_GAME_KILL_FLOOR &&
 				len(entry.Player.DestinyUserInfo.BungieGlobalDisplayName) > 0 {
-				ch <- fmt.Sprintf("%s#%d",
+				ch <- fmt.Sprintf("%s#%04d",
 					entry.Player.DestinyUserInfo.BungieGlobalDisplayName,
 					entry.Player.DestinyUserInfo.BungieGlobalDisplayNameCode)
 			}
