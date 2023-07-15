@@ -22,7 +22,7 @@ const SMURF_KD_FLOOR = 0.3
 
 const API_ROOT = "https://www.bungie.net/Platform"
 const ACTIVITIES_COUNT_MAX = 250
-const QP_CONTROL_MODE = 73
+const QP_CONTROL_MODE = 19
 
 const (
 	ErrNone          int = 0
@@ -38,7 +38,7 @@ var sbmmStart time.Time
 func init() {
 	var err error
 
-	sbmmStart, err = time.Parse(time.RFC3339, "2022-08-23T17:00:00Z")
+	sbmmStart, err = time.Parse(time.RFC3339, "2023-05-23T17:00:00Z")
 
 	if err != nil {
 		log.Fatal(err)
