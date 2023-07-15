@@ -33,7 +33,7 @@ const (
 var client = &http.Client{}
 var sbmmStart time.Time
 
-// define sbmmStart as season of plunder start.
+// define sbmmStart as season of the deep start.
 // games before that cut-off won't be looked at
 func init() {
 	var err error
